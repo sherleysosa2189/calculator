@@ -1,61 +1,78 @@
 h1 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color:rgb(26, 23, 23);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 
 .calculator {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    justify-content: center;
+    /* justify-content:flex-end; */
     flex-direction: column;
     align-items: center;
     font-size: 100px;
     border-radius: 10px;
-    background-color: #fff;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for 3D effect */
+    height: 700px;
+  }
+
+  .calculator-border {
+    border: 10px solid rgb(31, 29, 29);
+    border-radius:10px;
+    background-color: black;
   }
   
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Creates a 4-column grid */
     gap: 10px;
+    width: 440px;
     padding: 10px;
     border: 3px solid #161414; 
-    border-radius: 10px; 
-    background-color: #f7f7f7; 
+    border-radius: 10px;
+    background-color: black;
   }
   
   .button {
     width: 100px;
     height: 100px;
     font-size: 50px;
-    background-color: darkorange;
+    background-color:chocolate;
     border: 3px solid #161414; 
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth color transition on hover */
+    padding: black;
+
   }
   
   .button:hover {
     background-color: #e67e22; /* Slightly darker orange when hovered */
     border-color: #d35400; /* Change the border color when hovered (outside border) */
   }
+
+  .display-border {
+    border: 3px solid #161414; 
+    border-radius: 10px;
+    background-color: black;
+
+  }
   
   .display {
     width: 420px;
     height: 100px;
     font-size: 50px;
-    background-color: darkorange;
-    border: 3px solid #161414; 
-    border-radius: 10px; 
-    cursor: pointer;
+    background-color:chocolate;
+    border: 3px solid #161414;
+    border-radius: 10px;
     text-align: center;
-    margin-top: 20px;
+    margin:12px;
     padding: 5px;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
   }
   
   .display:hover {
